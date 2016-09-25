@@ -11,6 +11,6 @@ branches:
 notifications:
   email:
     recipients:
-      - promosdbm@gmail.com
+      - proyecto.dbm@gmail.com
       
 script: mvn verify
