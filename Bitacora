@@ -1,3 +1,7 @@
 25/09/2016 - Versión inicial commited
 25/09/2016 - .travis.yml added
 25/09/2016 - Cambiado email .travis.yml
+25/09/2016 - Cambiada referencia a JRE. En mi equipo no me garantiza que funcione SDK por SO antiguo
+26/09/2016 - Consigo, no se bien como,dejar todo en raiz. He utilizado el comando Add to Index,
+para todos los ficheros que no colgaban del raiz. Aparentemente ha quedado ok.
+En travis ya se han pasado los tests.
