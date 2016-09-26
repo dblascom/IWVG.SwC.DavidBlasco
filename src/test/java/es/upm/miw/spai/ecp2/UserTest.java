@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package es.upm.miw.spai.ecp2;
 
 import static org.junit.Assert.*;
@@ -5,40 +8,33 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * @author USUARIO
+ *
+ */
 public class UserTest {
 
+private User u;
+    
     @Before
-    public void setUp() throws Exception {
+    public void before(){
+        u = new User(1, "David", "Blasco");
     }
 
     @Test
     public void testUser() {
-        fail("Not yet implemented");
-    }
-
-    @Test
-    public void testGetNumber() {
-        fail("Not yet implemented");
-    }
-
-    @Test
-    public void testGetName() {
-        fail("Not yet implemented");
-    }
-
-    @Test
-    public void testGetFamilyName() {
-        fail("Not yet implemented");
+        assertEquals(1, u.getNumber());
+        assertEquals("David", u.getName());
+        assertEquals("Blasco", u.getFamilyName());
     }
 
     @Test
     public void testFullName() {
-        fail("Not yet implemented");
+        assertEquals("David Blasco", u.fullName());
     }
 
     @Test
     public void testInitials() {
-        fail("Not yet implemented");
+        assertEquals("D.", u.initials());
     }
-
 }

@@ -2,38 +2,33 @@ package es.upm.miw.spai.ecp2;
 
 import static org.junit.Assert.*;
 
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 
 public class FractionTest {
 
-    @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-    }
+    private Fraction f;
 
+    @Before
+    public void before(){
+        f = new Fraction(2,3);
+    }
+    
     @Test
     public void testFractionIntInt() {
-        fail("Not yet implemented");
+        assertNull("should be null", null);
     }
 
     @Test
     public void testFraction() {
-        fail("Not yet implemented");
-    }
-
-    @Test
-    public void testGetNumerator() {
-        fail("Not yet implemented");
-    }
-
-    @Test
-    public void testGetDenominator() {
-        fail("Not yet implemented");
+        f = new Fraction();
+        assertEquals(1, f.getNumerator());
+        assertEquals(1, f.getDenominator());
     }
 
     @Test
     public void testDecimal() {
-        fail("Not yet implemented");
+        assertEquals((double)2/3, f.decimal(), 0.001);
     }
 
 }
