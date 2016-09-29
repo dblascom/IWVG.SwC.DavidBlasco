@@ -36,4 +36,9 @@ public class FractionTest {
 		equals(f.isEquivalente(6, 9));
 	}
 
+    @Test 
+    public void testSuma(){
+    	Fraction resultado = f.suma(new Fraction(3,5));
+		assertEquals((double)19/15, resultado.decimal(), 0.001);
+    }
 }

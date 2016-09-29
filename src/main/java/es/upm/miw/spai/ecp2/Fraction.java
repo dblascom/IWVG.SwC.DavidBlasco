@@ -64,4 +64,17 @@ public class Fraction {
     	return ((this.numerator * den) == (this.denominator * num)) ? true : false;
     }
 
+    
+    public Fraction suma(Fraction f){
+    	if(this.denominator != f.denominator){
+    		//Si las fracciones tienen denominadores distintos, los igualamos para poder hacer la suma
+    		int denominatorAux = this.denominator;
+    		this.numerator = this.numerator * f.denominator;
+    		this.denominator = this.denominator * f.denominator;
+    		f.numerator = f.numerator * denominatorAux;
+    		f.denominator = f.denominator * denominatorAux;
+    	}
+    	this.numerator = this.numerator + f.numerator;
+    	return this;
+    } 
 }
