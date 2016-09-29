@@ -37,4 +37,9 @@ private User u;
     public void testInitials() {
         assertEquals("D.", u.initials());
     }
+    
+	@Test
+	public void testUppercaseName() {
+		assertEquals("DAVID", u.uppercaseName());
+	}
 }
