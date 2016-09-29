@@ -7,3 +7,6 @@ para todos los ficheros que no colgaban del raiz. Aparentemente ha quedado ok.
 En travis ya se han pasado los tests.
 26/09/2016 - Me doy cuenta que he subido ficheros de configuración de Eclipse y sufro las consecuencias
 Tras momentos de pánico consigo estabilizar el proyecto
+29/09/2016 - Tamara y Juan terminan sus tareas
+    Actualizo ramas locales master y develop y origin/master se queda 9 commits atrás
+    Actualizo origin/master correctamente
