@@ -41,4 +41,10 @@ public class FractionTest {
     	Fraction resultado = f.suma(new Fraction(3,5));
 		assertEquals((double)19/15, resultado.decimal(), 0.001);
     }
+    
+    @Test
+    public void isPropia()
+    {
+    	assertEquals(true, f.isPropia());
+    }
 }
